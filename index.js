@@ -25,11 +25,6 @@ client.once('ready', () => {
 client.on('message', message => {
     if (!message.content.startsWith(prefix) || message.author.bot) return;
 
-client.on('guildCreate', guild => {
-    guild.systemChannel.send(`Hello, I'm **LeightonBot**, Thank you for inviting me!. Type `>help` for a list of commands!`)
-    });
-      
-
     const args = message.content.slice(prefix.length).split(/ +/);
     const command = args.shift().toLowerCase();
 

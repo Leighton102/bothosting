@@ -7,7 +7,7 @@ module.exports = {
             if (member) {
                 const memberTarger = message.guild.members.cache.get(member.id);
                 memberTarger.ban();
-                message.channel.send(`That member has been banned! ${message.author}`);
+                message.channel.send(`${user.tag} has been banned!`);
 
                 console.log(`[${message.author.id}] ${message.author.username} executed command ban in ${message.guild.name}`)
 
