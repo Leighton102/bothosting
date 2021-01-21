@@ -19,7 +19,7 @@ for (const file of commandFiles) {
 
 client.once('ready', () => {
     console.log('The bot is ready!');
-    client.user.setActivity('UNO | >help', { type: 'Playing' })
+    client.user.setActivity('UNO | >help', { type: 'PLAYING' })
 });
 
 client.on('message', message => {
