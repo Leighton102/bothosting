@@ -19,7 +19,7 @@ for (const file of commandFiles) {
 
 client.once('ready', () => {
     console.log('The bot is ready!');
-    client.user.setActivity('Opossum Videos | >help', { type: 'WATCHING' })
+    client.user.setActivity('Minecraft | >help', { type: 'PLAYING' })
 });
 
 client.on('message', message => {
@@ -42,8 +42,8 @@ client.on('message', message => {
         client.commands.get('kick').execute(message, args)
     } else if (command == 'ban') {
         client.commands.get('ban').execute(message, args)
-    } else if (command == 'help') {
-        client.commands.get('help').execute(message, args)
+    } else if (command == 'commands') {
+        client.commands.get('commands').execute(message, args)
     } else if (command == 'kat') {
         client.commands.get('kat').execute(message, args)
     } else if (command == 'e') {

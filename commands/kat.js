@@ -4,6 +4,6 @@ module.exports = {
     execute(message, args){
         message.channel.send('https://www.youtube.com/watch?v=J---aiyznGQ')
 
-        console.log(`${message.author.username} executed command kat in ${message.guild.name}`)
+        console.log(`[${message.author.id}] ${message.author.username} executed command kat in ${message.guild.name}`)
     }
 }

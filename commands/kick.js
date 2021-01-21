@@ -9,7 +9,7 @@ module.exports = {
                 memberTarger.kick();
                 message.channel.send(`That member has been kicked!`);
 
-                console.log(`${message.author.username} executed command kick in ${message.guild.name}`)
+                console.log(`[${message.author.id}] ${message.author.username} executed command kick in ${message.guild.name}`)
 
             } else {
                 message.channel.send(`Unable to kick that member! ${message.author}`);

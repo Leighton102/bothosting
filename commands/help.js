@@ -2,10 +2,9 @@ module.exports = {
     name: 'help',
     description: "The help command!",
     execute(message, args){
-        message.author.send(`Hey ${message.author.username}, **Join this server for help and commands!** https://discord.gg/9BdGSUPHja`);
         message.channel.send(`I sent you a DM! ${message.author}`)
-
-        console.log(`${message.author.username} executed command help in ${message.guild.name}`)
-
+        message.author.send(`**Join this server for help and commands!** https://discord.gg/9BdGSUPHja`)
+        
+        console.log(`[${message.author.id}] ${message.author.username} executed command help in ${message.guild.name}`)
     }
 }

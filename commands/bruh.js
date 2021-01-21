@@ -4,6 +4,6 @@ module.exports = {
     execute(message, args){
         message.channel.send('https://media.tenor.com/images/75fd0d40549b2548a49c217eadff8744/tenor.gif')
         
-        console.log(`${message.author.username} executed command bruh in ${message.guild.name}`)
+        console.log(`[${message.author.id}] ${message.author.username} executed command bruh in ${message.guild.name}`)
     }
 }

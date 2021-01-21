@@ -6,6 +6,6 @@ module.exports = {
         message.channel.send(`ID: **${message.author.id}**`);
 
 
-        console.log(`${message.author.username} executed command me in ${message.guild.name}`)
+        console.log(`[${message.author.id}] ${message.author.username} executed command me in ${message.guild.name}`)
     }
 }

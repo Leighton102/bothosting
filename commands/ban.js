@@ -9,14 +9,14 @@ module.exports = {
                 memberTarger.ban();
                 message.channel.send(`That member has been banned! ${message.author}`);
 
-                console.log(`${message.author.username} executed command ban in ${message.guild.name}`)
+                console.log(`[${message.author.id}] ${message.author.username} executed command ban in ${message.guild.name}`)
 
             } else {
                 message.channel.send(`Unable to ban that member! ${message.author}`);
             }
 
         } else {
-            message.reply(`You do not have permission to use this command!`)
+            message.reply(`You do not have permission to use this command! ${message.author}`)
         }
     }
 }
