@@ -52,11 +52,9 @@ client.on('message', message => {
         client.commands.get('clear').execute(message, args)
     } else if (command == 'cheese') {
         client.commands.get('cheese').execute(message, args)
-    } else if (command == 'guild') {
-        client.commands.get('guild').run(message, args)
+    } else if (command == 'guildid') {
+        client.commands.get('guildid').execute(message, args)
     }
-
-
 })
 
 client.login(process.env.TOKEN);
