@@ -42,8 +42,8 @@ client.on('message', message => {
         client.commands.get('kick').execute(message, args)
     } else if (command == 'ban') {
         client.commands.get('ban').execute(message, args)
-    } else if (command == 'commands') {
-        client.commands.get('commands').execute(message, args)
+    } else if (command == 'help') {
+        client.commands.get('help').execute(message, args)
     } else if (command == 'kat') {
         client.commands.get('kat').execute(message, args)
     } else if (command == 'e') {
@@ -55,7 +55,7 @@ client.on('message', message => {
     } else if (command == 'mute') {
         client.commands.get('mute').execute(message, args)
     } else if (command == 'guild') {
-        client.commands.get('guild').execute(message, args)
+        client.commands.get('guild').run(message, args)
     }
 
 
