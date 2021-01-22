@@ -1,7 +1,7 @@
 module.exports = {
     name: 'cheese',
     description: "The cheese command!",
-    execute(message, args){
+    run(message, args) {
         message.channel.send(`Name: **${message.guild.name}**`)
         message.channel.send(`ID: **${message.guild.id}**`)
         message.channel.send(`Owner: **${message.guild.owner}**`)
