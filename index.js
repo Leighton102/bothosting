@@ -54,8 +54,6 @@ client.on('message', message => {
         client.commands.get('cheese').execute(message, args)
     } else if (command == 'guild') {
         client.commands.get('guild').execute(message, args)
-    } else if (command == 'pfp') {
-        client.commands.get('pfp').execute(message, args)
     }
 })
 
