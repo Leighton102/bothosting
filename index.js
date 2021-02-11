@@ -54,6 +54,8 @@ client.on('message', message => {
         client.commands.get('cheese').execute(message, args)
     } else if (command == 'guild') {
         client.commands.get('guild').execute(message, args)
+    } else if (command == 'dog') {
+        client.commands.get('dog').execute(message, args)
     }
 })
 
