@@ -3,17 +3,24 @@ module.exports = {
     description: "The ban command!",
     execute(message, args){
         if (message.member.hasPermission('BAN_MEMBERS')) {
-            const member = message.mentions.users.first();
-            if (member) {
-                const memberTarger = message.guild.members.cache.get(member.id);
-                memberTarger.ban();
-                message.channel.send(`That member has been banned!`);
-                
-
+        
+            if (message.member.hasPermission('ADMINISTRATOR')) {
+                message.return(`I can't ban an admin. ${message.suthor}`)
+           
             } else {
-                message.channel.send(`Unable to ban that member! ${message.author}`);
+                const member = message.mentions.users.first(); 
+                if (member) {
+                    const memberTarger = message.guild.members.cache.get(member.id);
+                    memberTarger.ban();
+                    message.channel.send(`That member has been banned!`);
+                    
+    
+                } else {
+                    message.channel.send(`Unable to ban that member! ${message.author}`);
+                }
+    
+     
             }
-
 
         } else {
             message.reply(`You do not have permission to use this command! ${message.author}`)
