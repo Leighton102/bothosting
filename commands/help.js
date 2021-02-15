@@ -2,7 +2,7 @@ module.exports = {
     name: 'help',
     description: "The help command!",
     execute(message, args) {
-        const Embed = new Discord.MessageEmbed()
+        const newEmbed = new Discord.MessageEmbed()
             .setColor('#3A46F0')
             .setTitle('Bot Help')
             .setURL('https://discord.gg/uKQPYFfmZJ')
@@ -14,7 +14,7 @@ module.exports = {
             .setImage('https://i.kym-cdn.com/entries/icons/original/000/034/772/Untitled-1.png%27')
             .setFooter('Last Updated 2/15/2021');
 
-        message.channel.send(newEmbed);
+        message.author.send(newEmbed);
     }
 
 
