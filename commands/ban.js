@@ -15,8 +15,6 @@ module.exports = {
             }
 
 
-            console.log(`[${message.author.id}] ${message.author.username} executed command ban in ${message.guild.name}`)
-
         } else {
             message.reply(`You do not have permission to use this command! ${message.author}`)
         }

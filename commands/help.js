@@ -22,4 +22,3 @@ module.exports = {
 
 }
         
-console.log(`[${message.author.id}] ${message.author.username} executed command help in ${message.guild.name}`)

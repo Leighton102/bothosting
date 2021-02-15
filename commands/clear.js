@@ -12,7 +12,6 @@ module.exports = {
             await message.channel.messages.fetch({limit: args[0]}).then(messages =>{
                 message.channel.bulkDelete(messages);
 
-                console.log(`[${message.author.id}] ${message.author.username} executed command clear in ${message.guild.name}`)
             });
         } else {
             message.reply(`You do not have permissions to use that command!`)

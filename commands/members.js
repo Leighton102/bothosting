@@ -5,6 +5,6 @@ module.exports = {
         const newEmbed = new Discord.MessageEmbed()
         message.channel.send(`${message.guild.name} has ${message.guild.members}`)
 
-        console.log(`[${message.author.id}] ${message.author.username} executed command members in ${message.guild.name}`)
+
     }
 }
