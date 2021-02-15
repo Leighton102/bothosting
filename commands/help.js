@@ -1,5 +1,3 @@
-const { MessageFlags } = require("discord.js")
-
 module.exports = {
     name: 'help',
     description: "The help command!",
