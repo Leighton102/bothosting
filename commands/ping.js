@@ -4,5 +4,6 @@ module.exports = {
     execute(message, args){
         message.channel.send(`${message.author} **Pong!**`)
 
+        console.log(`${message.author} executed ping lol XDXD XD XD XD XD XD X DX`)
     }
 }
