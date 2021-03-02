@@ -5,6 +5,7 @@ const client = new Discord.Client();
 const prefix = '>';
 
 const fs = require('fs');
+const { url } = require('inspector');
 const embed = require('./commands/embed');
 
 client.commands = new Discord.Collection();
@@ -19,7 +20,10 @@ for (const file of commandFiles) {
 
 client.once('ready', () => {
     console.log('The bot is ready!');
-    client.user.setActivity('the members!', { type: 'WATCHING' })
+    client.user.setActivity('Leightonny', {
+        type: "STREAMING",
+        url: 'https://www.youtube.com/channel/UCQ2tNrmy1mhWfs-kSbTszEg'
+    })
 });
 
 client.on('message', message => {
